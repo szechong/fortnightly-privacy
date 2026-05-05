@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Fortnightly</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0f1e;
+      --surface: #111827;
+      --border: #1e293b;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --text: #f1f5f9;
+      --text2: #94a3b8;
+      --text3: #64748b;
+      --green: #22c55e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.8;
+      padding: 0;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #0d1424, #1a1a3a);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .logo {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .app-name {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.5px;
+    }
+    .app-sub {
+      font-size: 13px;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-family: 'Georgia', serif;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--text3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Content */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Summary box */
+    .summary {
+      background: linear-gradient(135deg, #1a1a3a, #1a0a2e);
+      border: 1px solid #312e81;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 48px;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .summary-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .summary-item p {
+      font-size: 13px;
+      color: #c7d2fe;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.5;
+    }
+    .summary-item strong {
+      display: block;
+      color: var(--text);
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    /* Sections */
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      font-family: 'Georgia', serif;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 20px 0 8px;
+      font-family: 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--text2);
+      margin-bottom: 14px;
+      font-family: 'Georgia', serif;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+    ul li {
+      font-size: 15px;
+      color: var(--text2);
+      padding: 6px 0 6px 24px;
+      position: relative;
+      font-family: 'Georgia', serif;
+    }
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; color: var(--text2); font-size: 14px; }
+
+    /* Contact */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-card h2 { border: none; }
+    .contact-email {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 10px 24px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .container { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-wrap">
+      <div class="logo">⬡</div>
+      <div>
+        <div class="app-name">Fortnightly</div>
+        <div class="app-sub">Habit & Task Tracker</div>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 2026</p>
+  </div>
+
+  <div class="container">
+
+    <!-- TL;DR summary -->
+    <div class="summary">
+      <div class="summary-title">In Plain English</div>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div class="summary-icon" style="background:#0f2010">📱</div>
+          <p><strong>All data stays on your device</strong>Your habits, tasks and progress are stored locally and never uploaded to any server.</p>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon" style="background:#1a1a3a">🔑</div>
+          <p><strong>Your API key is yours</strong>Stored only on your device. Never seen or transmitted to us.</p>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon" style="background:#1a2e1a">🚫</div>
+          <p><strong>No ads, no tracking</strong>We do not collect analytics, show ads, or track your behaviour.</p>
+        </div>
+        <div class="summary-item">
+          <div class="summary-icon" style="background:#3a2a0a">🤖</div>
+          <p><strong>AI coaching is optional</strong>Only your habit data is sent to Anthropic when you request AI coaching — nothing else.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. Introduction -->
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Fortnightly ("the App", "we", "us") is a personal habit and task tracking application. This Privacy Policy explains what information the App collects, how it is used, and your rights regarding your data.</p>
+      <p>By using the App, you agree to the practices described in this policy. If you do not agree, please discontinue use of the App.</p>
+    </section>
+
+    <!-- 2. Information We Collect -->
+    <section>
+      <h2>2. Information We Collect</h2>
+
+      <h3>Data stored locally on your device</h3>
+      <p>The App stores the following data exclusively on your device using Android's local storage (AsyncStorage). This data never leaves your device unless you explicitly use the AI Coaching feature:</p>
+      <ul>
+        <li>Habit names, targets, and notes you create</li>
+        <li>Task titles, priorities, due dates, and notes</li>
+        <li>Daily check-in records and progress remarks</li>
+        <li>Fortnightly cycle history and results</li>
+        <li>AI coaching suggestions and your feedback on them</li>
+        <li>Your Anthropic API key (encrypted in local storage)</li>
+      </ul>
+
+      <h3>Data we do NOT collect</h3>
+      <ul>
+        <li>Your name, email address, or any personal identifiers</li>
+        <li>Location data</li>
+        <li>Device identifiers or advertising IDs</li>
+        <li>Usage analytics or crash reports</li>
+        <li>Any data through third-party SDKs or analytics tools</li>
+      </ul>
+
+      <div class="highlight">
+        <p>💡 The App has no backend server and no database. There is nowhere for your personal data to be stored other than on your own device.</p>
+      </div>
+    </section>
+
+    <!-- 3. AI Coaching Feature -->
+    <section>
+      <h2>3. AI Coaching Feature</h2>
+      <p>The App includes an optional AI Coaching feature powered by Claude AI (developed by Anthropic, PBC). This feature is entirely opt-in and requires you to provide your own Anthropic API key.</p>
+
+      <h3>What is sent to Anthropic</h3>
+      <p>When you close a fortnightly cycle and AI coaching is triggered, the following data is transmitted directly from your device to Anthropic's servers:</p>
+      <ul>
+        <li>Your habit names and fortnightly targets</li>
+        <li>The number of times each habit was completed</li>
+        <li>Any progress remarks you wrote for each check-in</li>
+      </ul>
+
+      <h3>What is NOT sent to Anthropic</h3>
+      <ul>
+        <li>Your task list or to-do items</li>
+        <li>Any personal identifying information</li>
+        <li>Your device information</li>
+      </ul>
+
+      <h3>Anthropic's privacy practices</h3>
+      <p>Data sent to Anthropic is subject to Anthropic's own Privacy Policy, available at <strong>anthropic.com/privacy</strong>. We encourage you to review it. The App uses the Anthropic Messages API directly from your device — we have no access to this data.</p>
+
+      <h3>Your API key</h3>
+      <p>Your Anthropic API key is stored only on your device using local storage. It is transmitted only to Anthropic's servers (api.anthropic.com) as an authentication header. It is never sent to us or any other party.</p>
+    </section>
+
+    <!-- 4. Data Sharing -->
+    <section>
+      <h2>4. Data Sharing and Disclosure</h2>
+      <p>We do not sell, trade, rent, or otherwise share your personal data with any third parties, except as described below:</p>
+      <ul>
+        <li><strong>Anthropic PBC</strong> — Only when you use the AI Coaching feature, as described in Section 3</li>
+        <li><strong>Legal requirements</strong> — If required by law, court order, or governmental authority</li>
+      </ul>
+      <p>There are no other circumstances under which your data is shared.</p>
+    </section>
+
+    <!-- 5. Data Security -->
+    <section>
+      <h2>5. Data Security</h2>
+      <p>Your data is stored on your device using Android's standard local storage mechanisms. The App uses HTTPS for all network communications and enforces a strict network security configuration that only permits connections to Anthropic's API servers.</p>
+      <p>While we take reasonable precautions, no method of electronic storage is 100% secure. You are responsible for maintaining the security of your device.</p>
+    </section>
+
+    <!-- 6. Data Retention -->
+    <section>
+      <h2>6. Data Retention and Deletion</h2>
+      <p>All data is stored locally on your device for as long as the App is installed. You can delete your data at any time by:</p>
+      <ul>
+        <li>Uninstalling the App (removes all locally stored data)</li>
+        <li>Clearing the App's data through Android Settings → Apps → Fortnightly → Clear Data</li>
+        <li>Removing your API key through the Settings tab within the App</li>
+      </ul>
+      <p>We do not retain any copies of your data as we have no server-side storage.</p>
+    </section>
+
+    <!-- 7. Children -->
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided information through the App, please contact us so we can take appropriate action.</p>
+    </section>
+
+    <!-- 8. Changes -->
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+      <p>Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <!-- 9. Your Rights -->
+    <section>
+      <h2>9. Your Rights</h2>
+      <p>Since all your data is stored locally on your device, you have full control over it at all times. You may:</p>
+      <ul>
+        <li>Access your data — it is all visible within the App</li>
+        <li>Delete your data — by clearing App data or uninstalling</li>
+        <li>Export your data — the App displays all your history in the History tab</li>
+        <li>Opt out of AI features — simply do not enter an API key</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <div class="contact-card">
+      <h2>10. Contact Us</h2>
+      <p style="color: var(--text2); margin-bottom: 16px;">If you have any questions about this Privacy Policy or the App's data practices, please contact us:</p>
+      <a href="mailto:genie10001@gmail.com" class="contact-email">genie10001@gmail.com</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Fortnightly · Habit & Task Tracker · All rights reserved
+  </footer>
+
+</body>
+</html>
