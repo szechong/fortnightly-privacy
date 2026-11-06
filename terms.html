@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Next Move AI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0f1e;
+      --surface: #111827;
+      --border: #1e293b;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --text: #f1f5f9;
+      --text2: #94a3b8;
+      --text3: #64748b;
+      --green: #22c55e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.8;
+      padding: 0;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #0d1424, #1a1a3a);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .logo {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .app-name {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.5px;
+    }
+    .app-sub {
+      font-size: 13px;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-family: 'Georgia', serif;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--text3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Content */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Summary box */
+    .summary {
+      background: linear-gradient(135deg, #1a1a3a, #1a0a2e);
+      border: 1px solid #312e81;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 48px;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .summary-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .summary-item p {
+      font-size: 13px;
+      color: #c7d2fe;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.5;
+    }
+    .summary-item strong {
+      display: block;
+      color: var(--text);
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    /* Sections */
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      font-family: 'Georgia', serif;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 20px 0 8px;
+      font-family: 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--text2);
+      margin-bottom: 14px;
+      font-family: 'Georgia', serif;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+    ul li {
+      font-size: 15px;
+      color: var(--text2);
+      padding: 6px 0 6px 24px;
+      position: relative;
+      font-family: 'Georgia', serif;
+    }
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; color: var(--text2); font-size: 14px; }
+
+    /* Contact */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-card h2 { border: none; }
+    .contact-email {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 10px 24px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .container { padding: 32px 16px 60px; }
+    }
+    footer a { color: var(--text2); }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-wrap">
+      <div class="logo">⬡</div>
+      <div>
+        <div class="app-name">Next Move AI</div>
+        <div class="app-sub">Formerly Fortnightly · Goals, Habits &amp; Tasks</div>
+      </div>
+    </div>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: 7 November 2026</p>
+  </div>
+
+  <div class="container">
+
+    <div class="highlight" style="margin-bottom:40px">
+      <p>These terms cover the Next Move AI app on Android and the web app at app.h2math.com (together, "the App"). By installing or using the App you agree to them. If you do not agree, please do not use the App.</p>
+    </div>
+
+    <section>
+      <h2>1. Who provides the App</h2>
+      <p>The App is provided by <strong>Enjoylearn (h2math.com)</strong>, Singapore ("we", "us"). You can reach us at the email address at the end of this page.</p>
+    </section>
+
+    <section>
+      <h2>2. Using the App</h2>
+      <ul>
+        <li>The App is free to download. Tracking goals, habits, tasks, people and your journal is free.</li>
+        <li>AI features (Next move, Reflect, Decide, People profiles) need either the AI Coach Pass or your own AI key.</li>
+        <li>You must be at least 13 years old to use the App. If you are under the age of majority where you live, use it with a parent's or guardian's permission.</li>
+        <li>Please use the App lawfully, and do not try to copy, reverse engineer, resell or overload it, or get around the AI Coach Pass limits.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. AI Coach Pass (subscription)</h2>
+      <ul>
+        <li>The AI Coach Pass is a monthly subscription sold through Google Play. The price is shown in the App and on Google Play before you buy.</li>
+        <li>It renews automatically each month until you cancel. You can cancel at any time in Google Play → Profile → Payments &amp; subscriptions → Subscriptions. The Pass then stays active until the end of the period you have paid for.</li>
+        <li>Payments, refunds and billing are handled by Google Play under Google's policies. We do not see or store your payment details.</li>
+        <li>The Pass includes a fair-use allowance of AI requests per day (currently 20). We may change the allowance, the AI models used or the features included, and we will tell you in the App before a change that reduces what you get.</li>
+        <li>If we change the price, Google Play tells existing subscribers in advance, and you can cancel before the new price applies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Using your own AI key</h2>
+      <p>If you enter your own Anthropic or OpenRouter API key, your AI requests go straight from your device to that provider, and you pay that provider under its own terms. Keep your key private. We are not responsible for charges on your own AI account.</p>
+    </section>
+
+    <section>
+      <h2>5. AI suggestions are not professional advice</h2>
+      <div class="highlight">
+        <p>Next moves, ideas, reflections, decision options, success percentages, plans and people profiles are produced by AI from the information you give the App. They can be wrong, incomplete or out of date. They are general suggestions only, not financial, investment, legal, medical, psychological or other professional advice.</p>
+      </div>
+      <p>You decide what to do and are responsible for your own decisions. For important matters, please get advice from a qualified professional. If you are in crisis or danger, contact your local emergency services.</p>
+    </section>
+
+    <section>
+      <h2>6. Your data</h2>
+      <p>Your data belongs to you. It is stored on your device and, if you turn on sync, in your own Google Drive. How data is handled, including what is sent to an AI provider, is explained in our <a href="index.html" style="color:var(--accent)">Privacy Policy</a>. Please keep your own backup (CSV export or Google Drive sync). We cannot recover data that is deleted from your device.</p>
+    </section>
+
+    <section>
+      <h2>7. Availability and changes</h2>
+      <p>We work to keep the App running well, but we cannot promise it will always be available or free of errors. Features that depend on others (Google Play, Google Drive, AI providers, web search) may change or stop working. We may update, change or stop parts of the App at any time.</p>
+    </section>
+
+    <section>
+      <h2>8. No warranty and limits of liability</h2>
+      <p>The App is provided "as is" and "as available". To the extent the law allows, we give no warranties, and we are not liable for any indirect or consequential loss, or for loss arising from decisions or actions you take based on the App or its AI suggestions. If we are found liable, our total liability is limited to the amount you paid us for the AI Coach Pass in the 12 months before the claim.</p>
+      <p>Nothing in these terms limits rights you have under consumer protection laws that cannot be excluded.</p>
+    </section>
+
+    <section>
+      <h2>9. Ending your use</h2>
+      <p>You can stop using the App at any time by uninstalling it and cancelling any subscription in Google Play. We may suspend access to AI features for misuse of the App or these terms.</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to these terms</h2>
+      <p>We may update these terms from time to time. Changes will be posted on this page with a new "Last updated" date. Continued use of the App after a change means you accept the updated terms.</p>
+    </section>
+
+    <section>
+      <h2>11. Governing law</h2>
+      <p>These terms are governed by the laws of Singapore. Disputes are subject to the courts of Singapore, unless the law where you live gives you the right to bring a claim in your local courts.</p>
+    </section>
+
+    <div class="contact-card">
+      <h2>12. Contact Us</h2>
+      <p style="color: var(--text2); margin-bottom: 16px;">Questions about these terms? Please contact us:</p>
+      <a href="mailto:genie10001@gmail.com" class="contact-email">genie10001@gmail.com</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Enjoylearn (h2math.com) · Next Move AI · <a href="index.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
