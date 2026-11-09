@@ -232,7 +232,7 @@
       </div>
     </div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 9 November 2026</p>
+    <p class="updated">Last updated: 9 November 2026 (AI Coach now uses Next Move AI credit on Android and the web)</p>
   </div>
 
   <div class="container">
@@ -243,11 +243,11 @@
       <div class="summary-grid">
         <div class="summary-item">
           <div class="summary-icon" style="background:#0f2010">📱</div>
-          <p><strong>Your data stays on your device</strong>Your goals, habits, tasks and logs are stored on your phone. We have no server and never receive them.</p>
+          <p><strong>Your data stays on your device</strong>Your goals, habits, tasks and logs are stored on your phone or computer (and in your own Google Drive if you turn on sync). We never receive them.</p>
         </div>
         <div class="summary-item">
           <div class="summary-icon" style="background:#3a2a0a">🤖</div>
-          <p><strong>AI Coach is optional</strong>Only when you use AI Coach is your data sent, over an encrypted connection, to the AI provider (Anthropic or OpenRouter).</p>
+          <p><strong>AI Coach is optional</strong>Only when you use AI Coach is your data sent, over an encrypted connection, through our server to the AI provider (Anthropic). It is not stored on the way.</p>
         </div>
         <div class="summary-item">
           <div class="summary-icon" style="background:#1a1a3a">📍</div>
@@ -286,8 +286,9 @@
         <li>Quick log entries</li>
         <li>AI Coach suggestions and your feedback on them</li>
         <li>People you choose to add (the People feature): their names, roles, your notes about your encounters with them, your follow-ups with them (what and by when), and the profiles the AI Coach writes from those notes</li>
-        <li>Your settings, including calendar settings and subscription status</li>
-        <li>Any AI provider API key you enter (Anthropic or OpenRouter)</li>
+        <li>Your settings, including calendar settings</li>
+        <li>Your Next Move AI credit sign-in token, so you stay signed in (if you use AI Coach)</li>
+        <li>An AI provider API key or subscription status saved by an older version of the App, if any — it stays on your device and is no longer used</li>
       </ul>
 
       <h3>Location (optional)</h3>
@@ -298,30 +299,30 @@
 
       <h3>Google Drive sync (optional)</h3>
       <p>Sync is off until you turn it on in Settings → Sync with Google Drive and sign in with your Google account. The App then keeps a copy of your data in a hidden app folder in <strong>your own Google Drive</strong> so your phone, tablet and computer stay up to date. The App asks Google only for permission to this app's own folder (the "drive.appdata" permission): it cannot see or change any of your other Drive files, and the folder is not visible in your Drive file list.</p>
-      <p>What is copied: your goals, habits and check-ins, tasks (including tagged place names and positions), philosophy, quick log, AI Coach suggestions, People and notes, and the times items were changed or deleted (so deletions sync too). What is never copied: your AI API keys, subscription status, theme, calendar settings and other settings that belong to one device.</p>
+      <p>What is copied: your goals, habits and check-ins, tasks (including tagged place names and positions), philosophy, quick log, AI Coach suggestions, People and notes, and the times items were changed or deleted (so deletions sync too). What is never copied: your Next Move AI credit sign-in, any old AI keys, theme, calendar settings and other settings that belong to one device.</p>
       <p>The copy goes directly from your device to Google over an encrypted connection and is stored under your Google account, subject to Google's privacy policy (policies.google.com/privacy). We never receive it. Your Google account email is shown in the App's Settings and stored only on your device.</p>
 
       <h3>Data we do NOT collect</h3>
       <ul>
-        <li>Your name, email address, or account details (the App has no accounts of its own; if you use Google Drive sync, you sign in with Google and your email stays on your device). The only exception is Next Move AI credit on the web app, described in Section 3.</li>
+        <li>Your name, email address, or account details (if you use Google Drive sync, you sign in with Google and your email stays on your device). The only exception is Next Move AI credit, which AI Coach uses: see Section 3.</li>
         <li>Device identifiers or advertising IDs</li>
         <li>Usage analytics or crash reports</li>
         <li>Contacts, photos or files</li>
-        <li>Payment card details (the AI Coach Pass is handled entirely by Google Play, and Next Move AI credit on the web is paid through Stripe)</li>
+        <li>Payment card details (Next Move AI credit is bought on the website app.h2math.com and paid through Stripe; the Android app sells nothing)</li>
       </ul>
 
       <div class="highlight">
-        <p>💡 The App keeps your data on your device (and in your own Google Drive if you turn on sync). We do not receive or store it. The only data our server keeps is the small account record for Next Move AI credit on the web app, if you choose to use it (see Section 3).</p>
+        <p>💡 The App keeps your data on your device (and in your own Google Drive if you turn on sync). We do not receive or store it. The only data our server keeps is the small account record for Next Move AI credit, if you use AI Coach (see Section 3).</p>
       </div>
     </section>
 
     <!-- 3. AI Coach -->
     <section>
       <h2>3. AI Coach</h2>
-      <p>AI Coach is optional. It runs only when you ask it for a suggestion. It uses either Claude by Anthropic, PBC, or a model you choose through OpenRouter, with your own API key, with the built-in access included in the AI Coach Pass subscription (Android), or with Next Move AI credit (web app).</p>
+      <p>AI Coach is optional. It runs only when you ask it for a suggestion. It uses Claude by Anthropic, PBC, through Next Move AI credit on both the Android app and the web app. (Since November 2026 the App no longer uses your own API keys, OpenRouter or the AI Coach Pass subscription.)</p>
 
       <h3>What is sent to the AI provider</h3>
-      <p>When you use AI Coach, the following is sent from your device to the AI provider over an encrypted (HTTPS) connection — directly, or through our server if you use Next Move AI credit on the web app:</p>
+      <p>When you use AI Coach, the following is sent from your device through our server to the AI provider over encrypted (HTTPS) connections:</p>
       <ul>
         <li>Your life goals and what is important to you</li>
         <li>Your habits and progress in the current fortnight</li>
@@ -345,19 +346,16 @@
       </ul>
 
       <h3>AI providers' privacy practices</h3>
-      <p>Data sent to an AI provider is handled under that provider's own privacy policy: Anthropic at <strong>anthropic.com/privacy</strong>, and OpenRouter at <strong>openrouter.ai/privacy</strong> (OpenRouter passes your request to the model provider you select). We encourage you to review them. With your own key or the AI Coach Pass, the App sends requests directly from your device, so we have no access to this data. With Next Move AI credit, requests pass through our server on their way to Anthropic, but are not stored (see below).</p>
+      <p>Data sent to Anthropic is handled under Anthropic's privacy policy (<strong>anthropic.com/privacy</strong>). We encourage you to review it. Your requests pass through our server on their way to Anthropic, but are not stored (see below).</p>
 
-      <h3>Your API key</h3>
-      <p>If you enter your own API key, it is stored only on your device and sent only to the AI provider it belongs to (api.anthropic.com or openrouter.ai) to authenticate your requests. It is never sent to us or anyone else.</p>
-
-      <h3>Next Move AI credit (web app, optional)</h3>
-      <p>On the web app you can use the AI Coach without your own key by signing in with Google and using Next Move AI credit (free credit for new accounts, then prepaid top-ups). If you use it:</p>
+      <h3>Next Move AI credit</h3>
+      <p>To use AI Coach, you sign in with Google (on the Android app or the web app) and use Next Move AI credit: free credit for new accounts, then prepaid top-ups bought on the website. One Google account has one balance on all your devices. When you use it:</p>
       <ul>
         <li><strong>Your AI requests pass through our server to Anthropic.</strong> Our server adds our own Anthropic key and passes the reply back to you. We do not store your requests or the replies.</li>
         <li><strong>What our server keeps:</strong> your Google account ID and email address (from Google sign-in, which asks only for your basic profile and email), your credit balance, how much AI you used (number of words processed, cost and time of each request), and a record of your top-up payments (amount, date and Stripe reference).</li>
         <li><strong>Payments</strong> are handled by Stripe, which acts as the seller of record and processes your payment details under its own privacy policy (stripe.com/privacy). We never see your card details. Stripe tells us that a payment succeeded, its amount, and your email address for the receipt.</li>
         <li>Our server runs on Cloudflare, which hosts it on our behalf.</li>
-        <li>A sign-in token is kept in your browser so you stay signed in. Signing out of Next Move AI credit, or "Sign out and remove data from this device", removes it from the browser.</li>
+        <li>A sign-in token is kept on your device (in your browser on the web) so you stay signed in. Signing out of Next Move AI credit, or removing the App's data from the device, removes it.</li>
       </ul>
     </section>
 
@@ -366,11 +364,11 @@
       <h2>4. Data Sharing and Disclosure</h2>
       <p>We do not sell, trade or rent your personal data. Your data is shared only in these cases:</p>
       <ul>
-        <li><strong>Anthropic PBC or OpenRouter</strong> — only when you use AI Coach, as described in Section 3. If you turn on "Check recent news" in Decide, the AI provider may run a few web searches about your decision (search words are chosen by the AI from your decision) through its own search service, under its own privacy policy.</li>
+        <li><strong>Anthropic PBC</strong> — only when you use AI Coach, through our server, as described in Section 3. If you turn on "Check recent news" in Decide, Anthropic may run a few web searches about your decision (search words are chosen by the AI from your decision) through its own search service, under its own privacy policy.</li>
         <li><strong>Google (Google Drive)</strong> — only if you turn on Google Drive sync: your data is stored in your own Google account, as described in Section 2. We do not receive it.</li>
-        <li><strong>Google Play</strong> — if you buy the AI Coach Pass, the purchase is processed by Google Play under Google's privacy policy. We do not receive your payment details.</li>
-        <li><strong>Stripe</strong> — if you buy Next Move AI credit on the web app, Stripe processes the payment as the seller of record, under Stripe's privacy policy. We do not receive your payment details.</li>
-        <li><strong>Cloudflare</strong> — hosts the web app and, for Next Move AI credit, our server and its small account record (Section 3).</li>
+        <li><strong>Google sign-in</strong> — when you sign in for Next Move AI credit, Google confirms your account to us (your Google account ID and email address), under Google's privacy policy.</li>
+        <li><strong>Stripe</strong> — if you buy Next Move AI credit on the website, Stripe processes the payment as the seller of record, under Stripe's privacy policy. We do not receive your payment details.</li>
+        <li><strong>Cloudflare</strong> — hosts the web app and our AI server with its small account record (Section 3).</li>
         <li><strong>Legal requirements</strong> — if required by law, court order, or governmental authority</li>
       </ul>
       <p>There are no other circumstances under which your data is shared.</p>
@@ -390,10 +388,10 @@
       <ul>
         <li>Uninstalling the App (removes all data stored by the App)</li>
         <li>Clearing the App's data in Android Settings → Apps → the App → Storage → Clear data</li>
-        <li>Removing your API key in the App's Settings</li>
+        <li>Signing out of Next Move AI credit in AI Coach → AI setup (removes the sign-in token from the device)</li>
         <li>Google Drive sync copy: turn sync off in the App's Settings (Disconnect), then delete the copy in Google Drive on the web → Settings (⚙️) → Manage apps → Next Move AI → Options → Delete hidden app data</li>
       </ul>
-      <p>We do not keep any copies of your App data. If you use Next Move AI credit on the web app, our server keeps the account record described in Section 3 while you use it. To have it deleted, email us from the same Google account's address; we will delete it, except payment records that we must keep for accounting and tax purposes (generally 5 years in Singapore). Data already sent to an AI provider is kept according to that provider's own retention policy.</p>
+      <p>We do not keep any copies of your App data. If you use AI Coach, our server keeps the Next Move AI credit account record described in Section 3 while you use it. To have it deleted, email us from the same Google account's address; we will delete it, except payment records that we must keep for accounting and tax purposes (generally 5 years in Singapore). Data already sent to an AI provider is kept according to that provider's own retention policy.</p>
     </section>
 
     <!-- 7. Children -->
