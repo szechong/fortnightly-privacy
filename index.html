@@ -232,7 +232,7 @@
       </div>
     </div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 17 November 2026 (Public squads, Quit a habit)</p>
+    <p class="updated">Last updated: 17 November 2026 (iPhone app: Sign in with Apple and In-App Purchase; blocking in Squads; Public squads; Quit a habit)</p>
   </div>
 
   <div class="container">
@@ -276,8 +276,8 @@
       <h2>2. Information the App Uses</h2>
 
       <h3>Data stored on your device</h3>
-      <p>The App is available on Android and as a web app (app.h2math.com). On Android it stores your data in the phone's local app storage; in the web app it is stored in your browser on that device.</p>
-      <p>The App stores the following on your device using Android's local app storage. It is not uploaded to us, and it leaves your device only as described in Sections 3 and 4:</p>
+      <p>The App is available on Android, on iPhone and as a web app (app.h2math.com). On a phone it stores your data in the phone's local app storage; in the web app it is stored in your browser on that device.</p>
+      <p>The App stores the following on your device using the phone's local app storage. It is not uploaded to us, and it leaves your device only as described in Sections 3 and 4:</p>
       <ul>
         <li>Your life goals and what is important to you</li>
         <li>Habit names, targets and check-in records</li>
@@ -350,11 +350,12 @@
       <p>Data sent to Anthropic is handled under Anthropic's privacy policy (<strong>anthropic.com/privacy</strong>). We encourage you to review it. Your requests pass through our server on their way to Anthropic, but are not stored (see below).</p>
 
       <h3>Next Move AI credit</h3>
-      <p>To use AI Coach, you sign in with Google (on the Android app or the web app) and use Next Move AI credit: free credit for new accounts, then prepaid top-ups bought on the website. One Google account has one balance on all your devices. When you use it:</p>
+      <p>To use AI Coach, you sign in with Google (on Android, iPhone or the web app) or, on iPhone, with <span id="sign-in-with-apple">Sign in with Apple</span>, and use Next Move AI credit: free credit for new accounts, then prepaid top-ups bought on the website or, on iPhone, with Apple In-App Purchase. One account has one balance on all your devices. A Google account and an Apple account are separate accounts with separate balances. When you use it:</p>
       <ul>
         <li><strong>Your AI requests pass through our server to Anthropic.</strong> Our server adds our own Anthropic key and passes the reply back to you. We do not store your requests or the replies.</li>
-        <li><strong>What our server keeps:</strong> your Google account ID and email address (from Google sign-in, which asks only for your basic profile and email), your credit balance, how much AI you used (number of words processed, cost and time of each request), and a record of your top-up payments (amount, date and Stripe reference).</li>
-        <li><strong>Payments</strong> are handled by Stripe, which acts as the seller of record and processes your payment details under its own privacy policy (stripe.com/privacy). We never see your card details. Stripe tells us that a payment succeeded, its amount, and your email address for the receipt.</li>
+        <li><strong>What our server keeps:</strong> your Google account ID and email address (from Google sign-in, which asks only for your basic profile and email) or, with Sign in with Apple, an Apple account ID made for this app and the email address Apple gives us (this can be a private relay address from Apple that hides your real email, and Apple may not send it at all after the first sign-in); your credit balance, how much AI you used (number of words processed, cost and time of each request), and a record of your top-up payments (amount, date and Stripe or Apple transaction reference).</li>
+        <li><strong>Payments</strong> on the website are handled by Stripe, which acts as the seller of record and processes your payment details under its own privacy policy (stripe.com/privacy). We never see your card details. Stripe tells us that a payment succeeded, its amount, and your email address for the receipt.</li>
+        <li id="apple-in-app-purchase"><strong>On iPhone you can buy AI credit with Apple In-App Purchase.</strong> Apple handles the payment; we receive only the transaction ID, product and date — never card details. The App also sends Apple a random code made from your Next Move AI account, so that a purchase is added to the right account. If Apple refunds a purchase, Apple tells us and the credit it bought is removed.</li>
         <li>Our server runs on Cloudflare, which hosts it on our behalf.</li>
         <li>A sign-in token is kept on your device (in your browser on the web) so you stay signed in. Signing out of Next Move AI credit, or removing the App's data from the device, removes it.</li>
       </ul>
@@ -368,10 +369,12 @@
         <li><strong>Anthropic PBC</strong> — only when you use AI Coach, through our server, as described in Section 3. If you turn on "Check recent news" in Decide, Anthropic may run a few web searches about your decision (search words are chosen by the AI from your decision) through its own search service, under its own privacy policy.</li>
         <li><strong>Google (Google Drive)</strong> — only if you turn on Google Drive sync: your data is stored in your own Google account, as described in Section 2. We do not receive it.</li>
         <li><strong>Google sign-in</strong> — when you sign in for Next Move AI credit, Google confirms your account to us (your Google account ID and email address), under Google's privacy policy.</li>
+        <li><strong>Apple (iPhone)</strong> — if you use Sign in with Apple, Apple confirms your account to us (an account ID made for this app and, if you choose to share it, your email or a private relay address), under Apple's privacy policy. If you buy credit with In-App Purchase, Apple processes the payment and tells us the transaction ID, product and date (Section 3). If you delete your account, we ask Apple to end this app's access to your Apple account.</li>
         <li><strong>Stripe</strong> — if you buy Next Move AI credit on the website, Stripe processes the payment as the seller of record, under Stripe's privacy policy. We do not receive your payment details.</li>
         <li><strong>Cloudflare</strong> — hosts the web app and our AI server with its small account record (Section 3).</li>
         <li id="squads"><strong>Other members of a squad you join</strong> — if you join a squad, the other members see your nickname, the squad tasks and habits you add to your plan, whether you finished them (and the date), and how many times you did squad habits in the last 7 days. They also see squad suggestions you make, and cheers you send. They never see your other tasks, habits, notes, people, goals or Google account. Squad data is stored on our server (Cloudflare) so members can see it. Reports about squad content go to us for review.</li>
         <li id="public-squads"><strong>Public squads</strong> — if a squad owner makes a squad public, everyone signed in to the app can see its name, topic, one-line description, how many members it has and whether it was active this week. They do not see members' nicknames, squad tasks or the join code. If you ask to join a public squad, its owner sees the nickname you chose. Votes to remove a member are anonymous: members see only the number of votes, not who voted. If you are removed from a squad (by its owner or by a vote), we keep a record that stops you rejoining that squad.</li>
+        <li id="squad-blocking"><strong>Blocking in Squads</strong> — you can block another squad member. The person you block is not told. While they are blocked, you no longer see their suggestions, progress or cheers in any squad you share, they cannot join or ask to join squads you own, and public squads between you are hidden from each other. If you own the squad, blocking also removes them from it. We store that you blocked them (linked to your account), with their nickname and the squad name at that time, so you can see and undo it under Blocked people. Deleting either account removes the block.</li>
         <li><strong>Legal requirements</strong> — if required by law, court order, or governmental authority</li>
       </ul>
       <p>There are no other circumstances under which your data is shared.</p>
@@ -380,7 +383,7 @@
     <!-- 5. Data Security -->
     <section>
       <h2>5. Data Security</h2>
-      <p>Your data is stored on your device using Android's standard app storage, which other apps cannot read. All network communication from the App uses encrypted HTTPS connections.</p>
+      <p>Your data is stored on your device using the phone's standard app storage (Android or iPhone), which other apps cannot read. All network communication from the App uses encrypted HTTPS connections.</p>
       <p>While we take reasonable precautions, no method of electronic storage is 100% secure. You are responsible for maintaining the security of your device.</p>
     </section>
 
@@ -390,7 +393,7 @@
       <p>Your data is stored on your device for as long as the App is installed. You can delete it at any time by:</p>
       <ul>
         <li>Uninstalling the App (removes all data stored by the App)</li>
-        <li>Clearing the App's data in Android Settings → Apps → the App → Storage → Clear data</li>
+        <li>Clearing the App's data in Android Settings → Apps → the App → Storage → Clear data (on iPhone: delete the App)</li>
         <li>Signing out of Next Move AI credit in AI Coach → AI setup (removes the sign-in token from the device)</li>
         <li>Deleting your Next Move AI account (see <a href="#delete-account" style="color:var(--accent)">Delete your account</a> below)</li>
         <li>Leaving a squad (People → Squads → the squad → Leave squad) removes your nickname, answers and progress from that squad. Squad tasks and habits you added stay in your own plan.</li>
@@ -400,14 +403,14 @@
 
       <div class="highlight" id="delete-account" style="margin-top:24px">
         <h3 style="margin-top:0">Delete your Next Move AI: Goal Coach account</h3>
-        <p>Signing in with Google for Next Move AI credit creates an account on our server. You can delete it at any time, in any of these ways — you do not need to reinstall the App:</p>
+        <p>Signing in with Google (or, on iPhone, Sign in with Apple) for Next Move AI credit creates an account on our server. You can delete it at any time, in any of these ways — you do not need to reinstall the App:</p>
         <ul>
-          <li><strong>In the Android app:</strong> AI Coach → Setup → <strong>Delete my Next Move AI account</strong>, then confirm.</li>
+          <li><strong>In the Android or iPhone app:</strong> AI Coach → Setup → <strong>Delete my Next Move AI account</strong>, then confirm. If you signed in with Apple, the App asks you to confirm with Apple once more, and we then ask Apple to end this app's access to your Apple account (you can also do this yourself in iPhone Settings → your name → Sign in with Apple).</li>
           <li><strong>In the web app</strong> (app.h2math.com): AI Coach → Setup → <strong>Delete my Next Move AI account</strong>.</li>
-          <li><strong>By email:</strong> write to <a href="mailto:info@h2math.com?subject=Delete%20my%20Next%20Move%20AI%20account" style="color:var(--accent)">info@h2math.com</a> from the email address of the Google account you signed in with, with the subject "Delete my Next Move AI account". We delete it within 30 days and confirm by email.</li>
+          <li><strong>By email:</strong> write to <a href="mailto:info@h2math.com?subject=Delete%20my%20Next%20Move%20AI%20account" style="color:var(--accent)">info@h2math.com</a> from the email address of the account you signed in with, with the subject "Delete my Next Move AI account". We delete it within 30 days and confirm by email.</li>
         </ul>
-        <p><strong>What is deleted:</strong> your Google account ID and email address, your credit balance (including any unused bought credit, which cannot be refunded after deletion), your AI usage records, your sign-ins on every device, and your membership of every squad (your nickname, answers, progress and cheers), and your requests to join squads, your votes, and any records of squads you were removed from. Squad tasks and habits you suggested stay in the squad, shown as from a "Former member".</p>
-        <p><strong>What is kept, and why:</strong> records of top-up payments (amount, date and Stripe reference), which we must keep for accounting and tax purposes (generally 5 years in Singapore) and to handle refunds or disputes; and a one-way scrambled code made from your Google account ID together with how much free credit it had used, so that deleting and signing up again does not give the free credit a second time. These cannot be used to read your data.</p>
+        <p><strong>What is deleted:</strong> your Google or Apple account ID and email address, your credit balance (including any unused bought credit, which cannot be refunded after deletion), your AI usage records, your sign-ins on every device, and your membership of every squad (your nickname, answers, progress and cheers), and your requests to join squads, your votes, any records of squads you were removed from, and blocks you made or that others made of you. Squad tasks and habits you suggested stay in the squad, shown as from a "Former member".</p>
+        <p><strong>What is kept, and why:</strong> records of top-up payments (amount, date and Stripe or Apple transaction reference), which we must keep for accounting and tax purposes (generally 5 years in Singapore) and to handle refunds or disputes; and a one-way scrambled code made from your account ID together with how much free credit it had used, so that deleting and signing up again does not give the free credit a second time. These cannot be used to read your data.</p>
         <p>Deleting your account does not remove the goals, habits, tasks and other data stored in the App on your device or in your own Google Drive — see the steps above to remove those.</p>
       </div>
     </section>
